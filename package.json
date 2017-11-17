@@ -4,7 +4,10 @@
   "description": "An app that shows a slideshow of multiple pictures.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon client/index.js",
+    "bundle": "browserify client/public/*.js -t babelify -o server/public/bundle.js",
+    "bundle:watch": "watchify client/public/*.js -vd -t babelify -o server/public/bundle.js"
   },
   "repository": {
     "type": "git",
