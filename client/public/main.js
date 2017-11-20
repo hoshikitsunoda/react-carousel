@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 import ShowPhotos from './showphotos/'
 
-class Slide extends React.Component {
+class Carousel extends React.Component {
 render() {
-    return <div className="slide"><ShowPhotos /></div>
+    return <div className="slides"><ShowPhotos /></div>
   }
 }
 
-render(<Slide />, document.querySelector('#app'))
+render(<Carousel />, document.querySelector('#app'))
